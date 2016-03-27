@@ -84,7 +84,7 @@ describe('Visual monitor testing for the en site', function() {
 
   it('should show the about class page',function(done) {
     client
-      .url(baseUrl + '/book/אודות-המחלקה')
+      .url(baseUrl + '/mission')
       .webdrivercss(testName + '.about-class-en', {
         name: '1',
         exclude: [],
@@ -108,62 +108,11 @@ describe('Visual monitor testing for the en site', function() {
       .call(done);
   });
 
-  it('should show the blog page',function(done) {
-    client
-      .url(baseUrl + '/blog')
-      .webdrivercss(testName + '.blog-en', {
-        name: '1',
-        exclude: [],
-        remove: [],
-        hide: [],
-        screenWidth: selectedCaps == 'chrome' ? [640, 960, 1200] : undefined,
-      }, resultsCallback)
-      .call(done);
-  });
-
-  it('should show the presentations page',function(done) {
-    client
-      .url(baseUrl + '/presentations')
-      .webdrivercss(testName + '.presentations-en', {
-        name: '1',
-        exclude: [],
-        remove: [],
-        hide: [],
-        screenWidth: selectedCaps == 'chrome' ? [640, 960, 1200] : undefined,
-      }, resultsCallback)
-      .call(done);
-  });
 
   it('should show the documents page',function(done) {
     client
       .url(baseUrl + '/documents')
       .webdrivercss(testName + '.documents-en', {
-        name: '1',
-        exclude: [],
-        remove: [],
-        hide: [],
-        screenWidth: selectedCaps == 'chrome' ? [640, 960, 1200] : undefined,
-      }, resultsCallback)
-      .call(done);
-  });
-
-  it('should show the reader page',function(done) {
-    client
-      .url(baseUrl + '/reader')
-      .webdrivercss(testName + '.reader-en', {
-        name: '1',
-        exclude: [],
-        remove: [],
-        hide: [],
-        screenWidth: selectedCaps == 'chrome' ? [640, 960, 1200] : undefined,
-      }, resultsCallback)
-      .call(done);
-  });
-
-  it('should show the links page',function(done) {
-    client
-      .url(baseUrl + '/links')
-      .webdrivercss(testName + '.links-en', {
         name: '1',
         exclude: [],
         remove: [],
